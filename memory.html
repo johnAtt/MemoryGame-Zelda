@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/memory2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <title>Memory Quest</title>
+</head>
+
+<body>
+    <section class="container-fluid" id="level">
+            <embed src="./music/The Legend of Zelda musique.mp3" autostart="true" loop="true" hidden="true" style="
+            display: block!important">
+        <div class="row">
+            <div class="col-4 "></div>
+            <div class="col-4 btnL2 justify-content-center">
+                <p>Welcome to Zelda Memory Quest ! </br> Choose your level of difficulty </p>
+                <button onclick="memoryGame.levelStart()" class="btnL" id="btnLevel">Easy</button>
+                <button onclick="memoryGame.levelStart()" class="btnL" id="btnLevel1">Medium</button>
+                <button onclick="memoryGame.levelStart()" class="btnL" id="btnLevel2">Hard</button>
+            </div>
+            <div class="col-4 "></div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid center" id="gamePage">
+        <button onclick="memoryGame.initialize()" id="btnStart">New Game</button>
+        <div class="row" id="layeOut">
+        </div>
+    </section>
+
+    <section id="overlay">
+        <div>
+            <audio id="endMusic">
+                <source src="./music/endGame.mp3" type="audio/ogg">> Your browser does not support the audio element.
+            </audio>
+
+            <h5 class="text" id="guesses">Congratulation ! you won you should play again!! </br>
+                <button onclick="memoryGame.initialize()" id="btnWon">New Game</button>
+            </h5>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="./js/memory2.js"></script>
+</body>
+
+</html>

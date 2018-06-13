@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Zelda Bold";
+  src: url('./font/ZELDA Regular.otf');
+}
+
+.center{
+    text-align: center;
+    perspective: 1000px;
+    display:none;
+}
+
+#level{
+  display:block;
+  text-align: center;
+  margin-left:0;
+  margin-right:0;
+  padding-top:15px;
+  width:100vw;
+  background-image: url("https://www.zelda.com/breath-of-the-wild/assets/media/wallpapers/desktop-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btnL2 p, h5.text, .btnL2, .btnL, #btnWon, #btnStart{
+  font-family: "Zelda Bold",sans-serif;
+  color:lightseagreen;
+}
+.btnL2 p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.btnL2{
+margin: 0px;
+justify-content: center;
+text-align: center;
+}
+
+.btnL, #btnWon, #btnStart{
+color:white;
+font-weight: 800;
+font-size: 25px;
+margin: 40px;
+height:100px;
+width:150px;
+border-radius:80px;
+background-image: url("https://img00.deviantart.net/9917/i/2013/050/1/c/minimalistic_blue_triforce_wallpaper_2_by_createvi-d5sjqfu.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+#gamePage{
+  margin-left:0;
+  margin-right:0;
+  background-image: url("https://images5.alphacoders.com/565/565008.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrong{
+  position: fixed;
+  width: auto;
+  height: auto;
+  top: 0;
+  color:white;
+  font-size:20px;
+}
+
+.col-3.card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 12px;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+    height: 170px;
+    max-width:20%;
+    padding: 0;
+    border-radius: 5px;
+    flex: none;
+}
+.frontImage, .backImage{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    padding: 0;
+  }
+  .frontImage{
+    background-image: url("https://img00.deviantart.net/9917/i/2013/050/1/c/minimalistic_blue_triforce_wallpaper_2_by_createvi-d5sjqfu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+  .backImage{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#btnStart{
+    margin:25px;
+}
+#btnWon{
+  width:400px;
+  height:80px;
+}
+
+.selected ,.backImage, .match{
+    transform: rotateY(180deg);
+  }
+
+#layeOut{
+    justify-content: center;
+}
+
+#overlay {
+  position: fixed; 
+  display: none; 
+  width: 100%; 
+  height: 100%; 
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  z-index: 2; 
+  cursor: pointer; 
+}
+.text{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+}
